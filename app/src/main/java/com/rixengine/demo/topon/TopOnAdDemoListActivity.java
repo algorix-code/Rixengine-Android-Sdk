@@ -2,6 +2,8 @@ package com.rixengine.demo.topon;
 
 import android.os.Bundle;
 
+import com.anythink.core.api.ATSDK;
+import com.rixengine.demo.AdConfig;
 import com.rixengine.demo.BaseListActivity;
 import com.rixengine.demo.R;
 
@@ -14,6 +16,7 @@ public class TopOnAdDemoListActivity extends BaseListActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        initSdk();
     }
 
     @Override
@@ -35,6 +38,11 @@ public class TopOnAdDemoListActivity extends BaseListActivity {
         list.add(item);
 
         return list;
+    }
+
+    public  void initSdk () {
+        ATSDK.init(getApplicationContext(), AdConfig.TOPON_APP_ID, AdConfig.TOPON_KEY);
+        ATSDK.setNetworkLogDebug(true);
     }
 
 }

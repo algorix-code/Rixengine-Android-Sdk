@@ -8,10 +8,6 @@ import androidx.multidex.MultiDex;
 
 import com.rixengine.api.AlxAdSDK;
 import com.rixengine.api.AlxSdkInitCallback;
-import com.anythink.core.api.ATSDK;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 public class MainApp extends Application {
     private final String TAG = "MainApp";
@@ -33,7 +29,6 @@ public class MainApp extends Application {
         super.onCreate();
         mApp=this;
         initAlxAd();
-        initAggregationPlatform();
     }
 
     /**
@@ -55,22 +50,6 @@ public class MainApp extends Application {
 
     }
 
-    //聚合平台配置
-    private void initAggregationPlatform() {
-        try {
-            //TopOn Ad Init
-            ATSDK.init(this, AdConfig.TOPON_APP_ID, AdConfig.TOPON_KEY);
-            ATSDK.setNetworkLogDebug(true);
 
-            //Google Ad Init
-            MobileAds.initialize(this, new OnInitializationCompleteListener() {
-                @Override
-                public void onInitializationComplete(InitializationStatus initializationStatus) {
-                }
-            });
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-    }
 
 }

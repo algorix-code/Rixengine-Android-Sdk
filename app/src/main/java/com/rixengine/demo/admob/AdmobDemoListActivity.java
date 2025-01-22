@@ -2,6 +2,9 @@ package com.rixengine.demo.admob;
 
 import android.os.Bundle;
 
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.rixengine.demo.BaseListActivity;
 import com.rixengine.demo.R;
 
@@ -12,6 +15,7 @@ public class AdmobDemoListActivity extends BaseListActivity {
 
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
+        initSdk();
     }
 
     @Override
@@ -27,6 +31,14 @@ public class AdmobDemoListActivity extends BaseListActivity {
         list.add(interstitialItem);
         list.add(nativeItem);
         return list;
+    }
+
+    public void initSdk(){
+        MobileAds.initialize(getApplicationContext(), new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
     }
 
 }
