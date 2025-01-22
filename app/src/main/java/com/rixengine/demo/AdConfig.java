@@ -3,7 +3,7 @@ package com.rixengine.demo;
 public class AdConfig {
 
     // demo test
-    public static String ALX_HOST = "http://demo.use.svr.rixengine.com/rtb";
+    public static String ALX_HOST = "https://demo.svr.rixengine.com/rtb";
     public static String ALX_SID = "36057"; // sid
     public static String ALX_APP_ID = "102512"; // app_id
     public static String ALX_TOKEN = "c976563eb2f1f134222d2730294e552d"; // token
@@ -49,7 +49,7 @@ public class AdConfig {
 
 
     //Max 平台广告配置信息
-    public static final String MAX_APP_KEY = "";
+    public static final String MAX_APP_KEY = "95-ffs7CG-uU8Z3exG1oky-tAdQGD1z1kHK365gIQdSIH90WNUv2fTCPFMBhVmH9Fx0o1GhhAX7DQDrnACsVIv";
     public static final String MAX_BANNER_AD = "d784fd2128f4d859";
     public static final String MAX_INTERSTITIAL_AD = "8309f13fe976b315";
     public static final String MAX_REWARD_VIDEO_AD = "03cae3773972a7ee";
