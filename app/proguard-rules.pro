@@ -20,7 +20,7 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
--dontwarn com.alxad.**
+-dontwarn com.rixengine.**
 -dontwarn com.admob.custom.adapter.**
 -dontwarn com.anythink.custom.adapter.**
 -dontwarn com.ironsource.adapters.custom.algorix.**
@@ -28,7 +28,7 @@
 -dontwarn com.mopub.mobileads.**
 -dontwarn com.tradplus.custom.adapter.**
 
--keep class com.alxad.api.** {*;}
+-keep class com.rixengine.api.** {*;}
 -keep class com.admob.custom.adapter.** {*;}
 -keep class com.anythink.custom.adapter.** {*;}
 -keep class com.ironsource.adapters.custom.algorix.** {*;}
