@@ -79,7 +79,7 @@ dependencies {
     implementation "androidx.browser:browser:1.0.0"
     //如果Topon选择了admob,就需要添加
     implementation "com.anythink.sdk:adapter-admob:6.1.68"
-//    implementation "com.google.android.gms:play-services-ads:21.1.0" //上面已经有
+//    implementation "com.google.android.gms:play-services-ads:22.0.0" //上面已经有
     // end
 
 
