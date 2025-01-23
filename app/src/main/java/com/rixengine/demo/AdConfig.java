@@ -3,7 +3,7 @@ package com.rixengine.demo;
 public class AdConfig {
 
     // demo test
-    public static String ALX_HOST = "https://demo.svr.rixengine.com/rtb";
+    public static String ALX_HOST = "https://demo.use.svr.rixengine.com/rtb";
     public static String ALX_SID = "36057"; // sid
     public static String ALX_APP_ID = "102512"; // app_id
     public static String ALX_TOKEN = "c976563eb2f1f134222d2730294e552d"; // token
