@@ -738,9 +738,7 @@ public class AlgorixMediationAdapter extends MediationAdapterBase implements Max
             AppLovinSdkSettings settings = AppLovinSdk.getInstance(context).getSettings();
             Map<String, String> values = settings.getExtraParameters();
             if (values != null && !values.isEmpty()) {
-                for (Map.Entry<String, String> entry : values.entrySet()) {
-                    map.put(entry.getKey(), entry.getValue());
-                }
+                map.putAll(values);
             }
         } catch (Exception e) {
             Log.e(TAG, "max extras field error:" + e.getMessage());
