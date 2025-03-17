@@ -8,6 +8,7 @@ import android.util.Log;
 
 import com.applovin.sdk.AppLovinMediationProvider;
 import com.applovin.sdk.AppLovinSdkInitializationConfiguration;
+import com.applovin.sdk.AppLovinSdkSettings;
 import com.rixengine.demo.AdConfig;
 import com.rixengine.demo.BaseListActivity;
 import com.rixengine.demo.R;
@@ -61,6 +62,9 @@ public class MaxDemoListActivity extends BaseListActivity  {
             // AppLovin SDK is initialized, start loading ads now or later if ad gate is reached
             Log.i(TAG, "AppLovinSdk-init:" );
         } );
+
+        AppLovinSdkSettings settings=AppLovinSdk.getInstance(this).getSettings();
+        settings.setExtraParameter("uid2_token","fqwerqwer");
     }
 
 //    Max 13版本以下

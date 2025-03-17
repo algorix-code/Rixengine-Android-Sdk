@@ -5,11 +5,11 @@ applovin {
 }
 
 android {
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.rixengine.sdk"
-        minSdkVersion 19
+        minSdkVersion 21
         targetSdkVersion 33
         versionCode 1
         versionName "1.0"
@@ -40,8 +40,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 }
 
@@ -61,10 +61,10 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.7.0'
 
     //alx ad
-    implementation (name:"rixengine.3.8.5",ext:"aar")
+    implementation (name:"rixengine.3.9.0",ext:"aar")
 
     //admob 平台
-    implementation "com.google.android.gms:play-services-ads:22.0.0"
+    implementation "com.google.android.gms:play-services-ads:23.5.0"
 
 
     //topon 平台
@@ -79,7 +79,7 @@ dependencies {
     implementation "androidx.browser:browser:1.0.0"
     //如果Topon选择了admob,就需要添加
     implementation "com.anythink.sdk:adapter-admob:6.1.68"
-//    implementation "com.google.android.gms:play-services-ads:22.0.0" //上面已经有
+//    implementation "com.google.android.gms:play-services-ads:23.5.0" //上面已经有
     // end
 
 

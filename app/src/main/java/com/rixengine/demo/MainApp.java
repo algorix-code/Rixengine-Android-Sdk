@@ -9,6 +9,9 @@ import androidx.multidex.MultiDex;
 import com.rixengine.api.AlxAdSDK;
 import com.rixengine.api.AlxSdkInitCallback;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class MainApp extends Application {
     private final String TAG = "MainApp";
 
@@ -44,6 +47,12 @@ public class MainApp extends Application {
                 }
             });
             AlxAdSDK.setDebug(true);
+
+
+//            用户扩展参数
+            Map<String,Object> extras=new HashMap<>();
+            extras.put("uid2_token","NewAdvertisingTokenIjb6u6KcMAtd0/4ZIAYkXvFrMdlZVqfb9LNf99B+1ysE/lBzYVt64pxYxjobJMGbh5q/HsKY7KC0Xo5Rb/Vo8HC4dYOoWXyuGUaL7Jmbw4bzh+3pgokelUGyTX19DfArTeIg7n+8cxWQ=");
+            AlxAdSDK.setExtraParameters(extras);
         } catch (Exception e) {
             e.printStackTrace();
         }
