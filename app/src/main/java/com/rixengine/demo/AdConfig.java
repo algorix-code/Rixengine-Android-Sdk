@@ -3,10 +3,12 @@ package com.rixengine.demo;
 public class AdConfig {
 
     // demo test
-    public static String ALX_HOST = "https://demo.use.svr.rixengine.com/rtb";
+    public static String ALX_HOST = "https://demo.svr.rixengine.com/rtb";
+
     public static String ALX_SID = "36057"; // sid
     public static String ALX_APP_ID = "102512"; // app_id
     public static String ALX_TOKEN = "c976563eb2f1f134222d2730294e552d"; // token
+
     public static String ALX_BANNER_AD_PID = "201304"; //banner AD id
     public static String ALX_NATIVE_AD_PID = "201307";//native AD id
     public static String ALX_REWARD_VIDEO_AD_PID = "201306";//reward video AD id
@@ -23,12 +25,6 @@ public class AdConfig {
     public static final String TOPON_NATIVE_PID = "b60d079068ec27";
     public static final String TOPON_SPLASH_PID = "b611335c2f2678";
 
-    //ocr 中介广告位：
-//    appid: ca-app-pub-4920936244266233~1192954605
-//    banner: ca-app-pub-4920936244266233/8031693522
-//    native:  ca-app-pub-4920936244266233/5760753407
-//    RD: ca-app-pub-4920936244266233/8770060126
-//    init: ca-app-pub-4920936244266233/2943018374
     //Google AdMob 平台广告配置信息
     public static final String ADMOB_APP_ID = "ca-app-pub-4920936244266233~6784498952";
     public static final String ADMOB_BANNER_ID = "ca-app-pub-4885562717451614/9675235882";
@@ -49,11 +45,12 @@ public class AdConfig {
 
 
     //Max 平台广告配置信息
+    //Max 平台广告配置信息
     public static final String MAX_APP_KEY = "95-ffs7CG-uU8Z3exG1oky-tAdQGD1z1kHK365gIQdSIH90WNUv2fTCPFMBhVmH9Fx0o1GhhAX7DQDrnACsVIv";
-    public static final String MAX_BANNER_AD = "d784fd2128f4d859";
-    public static final String MAX_INTERSTITIAL_AD = "8309f13fe976b315";
-    public static final String MAX_REWARD_VIDEO_AD = "03cae3773972a7ee";
-    public static final String MAX_NATIVE_AD = "2ad8ef4685641135";
+    public static final String MAX_BANNER_AD = "706e91b7aca6adcc";
+    public static final String MAX_INTERSTITIAL_AD = "06331c3416cee0af";
+    public static final String MAX_REWARD_VIDEO_AD = "1ff5f019e67f67b1";
+    public static final String MAX_NATIVE_AD = "e98ea7ad78d91b85";
 
 
 }

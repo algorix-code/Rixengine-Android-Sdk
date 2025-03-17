@@ -8,7 +8,7 @@ android {
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.rixengine.sdk"
+        applicationId "com.rixengine.demo"
         minSdkVersion 21
         targetSdkVersion 33
         versionCode 1
