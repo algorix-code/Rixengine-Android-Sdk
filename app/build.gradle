@@ -61,7 +61,7 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.7.0'
 
     //alx ad
-    implementation (name:"rixengine.3.9.0",ext:"aar")
+    implementation (name:"rixengine.3.9.1",ext:"aar")
 
     //admob 平台
     implementation "com.google.android.gms:play-services-ads:23.5.0"
